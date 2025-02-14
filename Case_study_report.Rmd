@@ -1,8 +1,9 @@
 ---
 title: "Google Data Analytics - Case Study"
-subtitle: "How Can a Wellness Technology Company Play It Smart?"
 author: "Lisa Krapp"
+subtitle: How Can a Wellness Technology Company Play It Smart?
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---
@@ -43,9 +44,9 @@ To address this task, the following **guiding questions** will be explored:
 
 The findings from this analysis will help **optimize Bellabeat’s marketing efforts** by:  
 
-✔ Identifying key user behaviors and preferences.  
-✔ Understanding how Bellabeat products align with consumer needs.  
-✔ Providing **data-backed recommendations** for future marketing campaigns.  
+* Identifying key user behaviors and preferences.  
+* Understanding how Bellabeat products align with consumer needs.  
+* Providing **data-backed recommendations** for future marketing campaigns.  
 
 This analysis will contribute to **Bellabeat’s growth strategy** by ensuring its marketing approach is aligned with **real-world smart device usage trends**.  
 
@@ -416,8 +417,6 @@ ggcorrplot(cor_matrix, lab = TRUE, lab_size = 3, method = "circle",
            type = "lower", colors = c("blue", "white", "red"),
            title = "Correlation Matrix of Fitbit Data")
 ```
-TODO: Describe Correlation Plot!
-
 Next, I want to look at when the FitBit Data is generated during the day. For this, I want to aggregate all days and all users and plot the mean values against the Time. This, I will do for Calories, Intensities, METs, SleepState and Steps.
 
 ```{r}
